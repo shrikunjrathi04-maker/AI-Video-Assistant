@@ -1,0 +1,42 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+*.tmp
+
+# Downloaded media
+*.mp3
+*.mp4
+*.wav
+*.m4a
+
+# Local databases and vector stores
+chroma_db/
+vector_store/
+.faiss/
+
+# Secrets
+secrets.toml
