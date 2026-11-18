@@ -2,7 +2,7 @@
 streamlit>=1.40.0
 
 # ===== Audio input (YouTube + uploaded files) =====
-yt-dlp>=2024.11.0
+yt-dlp[default]>=2026.10.26
 pydub>=0.25.1
 # NOTE: ffmpeg must be installed on the system (not a pip package)
 
