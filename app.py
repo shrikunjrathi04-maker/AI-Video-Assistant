@@ -2,9 +2,14 @@ import html
 import os
 import re
 import tempfile
+from pathlib import Path
 
 import streamlit as st
 from dotenv import load_dotenv
+
+# Load environment variables BEFORE importing project modules
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env", override=True)
 
 from utils.audio_processor import process_input
 from core.transcriber import transcribe_all
@@ -15,6 +20,7 @@ from core.extractor import (
     extract_questions,
 )
 from core.rag_engine import build_rag_chain, ask_question
+
 
 load_dotenv()
 
